@@ -1,0 +1,22 @@
+{
+  "name": "stylehub",
+  "version": "1.0.0",
+  "description": "StyleHub E-commerce - Full Stack Application",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "ecommerce",
+    "fashion",
+    "fullstack"
+  ],
+  "author": "StyleHub Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
